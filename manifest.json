@@ -1,7 +1,7 @@
 {
 	"id": "sidebar-vibrancy",
 	"name": "Sidebar Vibrancy",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"minAppVersion": "0.15.0",
 	"description": "Sidebar vibrancy for Obsidian on MacOS",
 	"author": "Alex Katopodis",
