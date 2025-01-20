@@ -1,8 +1,11 @@
-/*
+body.sidebar-vibrancy:not(.is-translucent),
+body.sidebar-vibrancy:not(.is-translucent) .workspace,
+body.sidebar-vibrancy:not(.is-translucent) .workspace-ribbon.mod-left {
+	background-color: transparent;
+}
 
-This CSS file will be included with your plugin, and
-available in the app when your plugin is enabled.
-
-If your plugin does not need CSS, delete this file.
-
-*/
+body.sidebar-vibrancy:not(.is-translucent) .mod-left-split {
+	--background-primary: transparent;
+	--background-secondary: transparent;
+	--tab-container-background: transparent;
+}
