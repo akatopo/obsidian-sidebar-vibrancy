@@ -1,7 +1,7 @@
 {
 	"$schema": "https://unpkg.com/release-it/schema/release-it.json",
 	"hooks": {
-		"after:bump": "node version-bump.mjs"
+		"after:bump": "npm run version"
 	},
 	"github": {
 		"release": true,
