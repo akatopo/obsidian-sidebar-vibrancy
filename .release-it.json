@@ -5,6 +5,7 @@
 	},
 	"github": {
 		"release": true,
+		"releaseName": "${version}",
 		"host": "github.com",
 		"assets": [
 			"main.js",
