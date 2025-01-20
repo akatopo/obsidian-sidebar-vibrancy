@@ -1,0 +1,15 @@
+{
+	"$schema": "https://unpkg.com/release-it/schema/release-it.json",
+	"github": {
+		"release": true,
+		"host": "github.com",
+		"assets": [
+			"main.js",
+			"manifest.json",
+			"styles.css"
+		]
+	},
+	"npm": {
+		"publish": false
+	}
+}
