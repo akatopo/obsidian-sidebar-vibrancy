@@ -1,6 +1,6 @@
 {
   "name": "sidebar-vibrancy",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Sidebar vibrancy for Obsidian on MacOS",
   "main": "main.js",
   "scripts": {
