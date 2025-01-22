@@ -4,7 +4,7 @@ import { BrowserWindow } from "electron";
 const className = "sidebar-vibrancy";
 
 const setVibrancyFailedMsg =
-	"Failed to updated the vibrancy value, are you on the right platform?";
+	"Failed to update the vibrancy value, are you on the right platform?";
 
 function hasTranslucentClass() {
 	return document.body.hasClass("is-translucent");
@@ -12,7 +12,7 @@ function hasTranslucentClass() {
 
 function setVibrancy(
 	electronWindow: Electron.BrowserWindow | undefined,
-	vibrancy: "under-window" | null = "under-window"
+	vibrancy: "under-window" | null = "under-window",
 ) {
 	const { platform } = globalThis.process;
 	if (!electronWindow || platform !== "darwin") {
@@ -28,8 +28,7 @@ function setVibrancy(
 
 function enable(electronWindow: Electron.BrowserWindow | undefined) {
 	if (!setVibrancy(electronWindow)) {
-		new Notice(setVibrancyFailedMsg);
-		throw new Error(setVibrancyFailedMsg);
+		console.warn(setVibrancyFailedMsg);
 	}
 	document.body.addClass(className);
 }
