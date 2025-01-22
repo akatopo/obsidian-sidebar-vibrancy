@@ -1,6 +1,6 @@
 body.sidebar-vibrancy:not(.is-translucent),
-body.sidebar-vibrancy:not(.is-translucent) .workspace,
-body.sidebar-vibrancy:not(.is-translucent) .workspace-ribbon.mod-left {
+body.sidebar-vibrancy:not(.is-translucent)
+	:is(.workspace, .workspace-ribbon.mod-left) {
 	background-color: transparent;
 }
 
@@ -8,4 +8,11 @@ body.sidebar-vibrancy:not(.is-translucent) .mod-left-split {
 	--background-primary: transparent;
 	--background-secondary: transparent;
 	--tab-container-background: transparent;
+	--background-modifier-form-field: transparent;
+}
+
+body.sidebar-vibrancy:not(.is-translucent)
+	.mod-left-split
+	input[type="search"] {
+	border-color: var(--background-modifier-border-hover);
 }
