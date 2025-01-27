@@ -16,3 +16,9 @@ body.sidebar-vibrancy:not(.is-translucent)
 	input[type="search"] {
 	border-color: var(--background-modifier-border-hover);
 }
+
+body.sidebar-vibrancy:not(.is-translucent)
+	.mod-left-split
+	.search-result-file-matches {
+	background-color: transparent;
+}
