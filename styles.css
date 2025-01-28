@@ -1,6 +1,10 @@
 body.sidebar-vibrancy:not(.is-translucent),
 body.sidebar-vibrancy:not(.is-translucent)
-	:is(.workspace, .workspace-ribbon.mod-left) {
+	:is(
+		.workspace,
+		.workspace-ribbon.mod-left,
+		.mod-left-split .search-result-file-matches
+	) {
 	background-color: transparent;
 }
 
@@ -15,10 +19,4 @@ body.sidebar-vibrancy:not(.is-translucent)
 	.mod-left-split
 	input[type="search"] {
 	border-color: var(--background-modifier-border-hover);
-}
-
-body.sidebar-vibrancy:not(.is-translucent)
-	.mod-left-split
-	.search-result-file-matches {
-	background-color: transparent;
 }
