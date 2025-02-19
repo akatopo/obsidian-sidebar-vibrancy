@@ -29,6 +29,7 @@ function setVibrancy(
 function enable(electronWindow: Electron.BrowserWindow | undefined) {
 	if (!setVibrancy(electronWindow)) {
 		console.warn(setVibrancyFailedMsg);
+		return;
 	}
 	document.body.addClass(className);
 }
