@@ -1,8 +1,13 @@
 body.sidebar-vibrancy:not(.is-translucent),
 body.sidebar-vibrancy:not(.is-translucent)
+	.workspace-ribbon.mod-primary::before,
+body.sidebar-vibrancy:not(.is-translucent)
 	:is(
 		.workspace,
 		.workspace-ribbon.mod-left,
+		:is(.mod-top-left-space, .mod-left-split)
+			.workspace-tab-header-container,
+		.side-dock-ribbon,
 		.mod-left-split .search-result-file-matches
 	) {
 	background-color: transparent;
